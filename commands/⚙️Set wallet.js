@@ -10,5 +10,5 @@
 CMD*/
 
 let wallet = User.getProperty("TRXwallet")
-User.setProperty("TRXwallet" , data.message ,"string")
-Bot.sendMessage("*✅ Santa wallet set To :* "+data.message+"")
+User.setProperty("TRXwallet" , message ,"string")
+Bot.sendMessage("*✅ Santa wallet set To :* "+message+"")
