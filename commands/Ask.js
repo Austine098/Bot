@@ -10,9 +10,9 @@
 CMD*/
 
 let Ask = User.getProperty("Ask")
-User.setProperty("Ask" , data.message ,"string")
-Bot.sendMessage("*📩 Message sent to admin as :* "+data.message+"\n\n Check your Support Questions get answered in the below channel - \n\n @SantaBotSupport")
+User.setProperty("Ask" , message ,"string")
+Bot.sendMessage("*📩 Message sent to admin as :* "+message+"\n\n Check your Support Questions get answered in the below channel - \n\n @SantaBotSupport")
 Api.sendMessage({ 
 chat_id: "@SantaBotSupport", 
-text: "Message From : "+user.first_name+" "+user.last_name+"\n\nUser ID - "+user.telegramid+"\n\nUsername - @"+user.username+"\n\n Message - "+data.message , 
+text: "Message From : "+user.first_name+" "+user.last_name+"\n\nUser ID - "+user.telegramid+"\n\nUsername - @"+user.username+"\n\n Message - "+message , 
 parse_mode: "Markdown"})
